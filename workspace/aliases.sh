@@ -115,6 +115,13 @@ alias gbr="git branch"
 alias gc="git commit"
 alias gck="git checkout"
 
+alias par="php artisan"
+alias parcc="php artisan clear-compiled"
+alias cdump="composer dumpautoload"
+alias parcomp="php artisan clear-compiled && php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear && composer dumpautoload"
+alias nrd="npm run dev"
+alias parcompn="php artisan clear-compiled && php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear && composer dumpautoload && npm run dev"
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$@"
